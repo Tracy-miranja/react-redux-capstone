@@ -14,7 +14,7 @@ export const fecthAlbum = createAsyncThunk('album/fetchAlbum', async() =>{
 })
 
 const initialState = {
-    album:{},
+    album:[],
     isLoading: false,
     hasError: false,
   }
@@ -29,8 +29,8 @@ export const HomesSlice = createSlice({
         state.isLoading = true;
      })
      .addCase( fecthAlbum.fulfilled, (state,action) => {
-        state.isLoading = false;
-        state.album = action.payload;
+        const {rawData}= action.payload;
+        return{...state, isLoading:false,album:rawData}
      })
      .addCase( fecthAlbum.rejected, (state) => {
         state.isLoading = false;
