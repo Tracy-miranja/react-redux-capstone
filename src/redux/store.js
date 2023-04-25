@@ -4,7 +4,7 @@ import DetailsReducer from './Details/DetailsSlice';
 
 export const store = configureStore({
     reducer:{
-        Home:HomeReducer,
+        album:HomeReducer,
         details: DetailsReducer,
 
     }

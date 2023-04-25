@@ -6,7 +6,7 @@ function Links(){
     <nav className="navbar navbar-expand ps-4 pe-4">
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <h1 className="ms-3 pt-2">Air pollution</h1>
+          <h1 className="ms-3 pt-2">Album</h1>
         </Link>
         <div className="navbar-collapse d-flex justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
