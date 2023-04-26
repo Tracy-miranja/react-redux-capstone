@@ -7,19 +7,8 @@
     margin-left:0 ;
     font-weight: 800;
     color: aliceblue;
-    width: 180px;
   }
 
-  .row{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 2px;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+  
 
-  @media screen and (max-width: 375px){
-   .row{
-    grid-template-columns: 1fr 1fr;
-   }
-  }
+ 

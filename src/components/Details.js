@@ -6,14 +6,36 @@ import {
     faMaskFace,
   } from '@fortawesome/free-solid-svg-icons';
 import {  useSelector } from "react-redux";
-
+import { useState } from 'react';
 
   function Details({ albumId }) {
     const { album } = useSelector((state) => state.album);
     const selectedAlbum = album.find((alb) => alb.Combined_Key === albumId);
+    const [search, setSearch] = useState("");
   
     return (
       <section>
+          <div className="nav_bar">
+            <div className="box1">
+            {/* <img src={logo} alt={logo} className="logo"/> */}
+                <h1 className="ms-3 pt-2 "> COVID-19 TRACKER</h1>
+                </div>
+            <div className="form">
+              <form className="search-box">
+                <input
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Country"
+                />
+                <button type="submit">Search</button>
+              </form>
+            </div>
+            </div>
+            <div className="map">
+                <div>
+                <h1>Global Covid-19 Record (2020-Now)</h1>
+                </div>
+            </div>
         <div>{selectedAlbum.Country_Region}: {selectedAlbum.Last_Update}</div>
         <div  className="app_details">
             <div className="data">

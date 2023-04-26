@@ -36,6 +36,14 @@ a{
   padding: 5px;
 }
 
+.row{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 2px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .form{
   display: flex;
   padding-bottom: 30px;
@@ -66,16 +74,15 @@ button:hover{
 .app_details{
   background-color: #7b3f00;
   height: auto;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto;
   font-weight: 800;
   color: aliceblue;
-  justify-content: space-around;
-  gap:10px;
+  padding: 2px;
+  gap: 10px;
 }
 .data{
   padding: 10px;
-  width: 100%;
   text-align: center;
   background-color: rgb(66,2, 44);
 }
@@ -131,3 +138,37 @@ button:hover{
 .box1{
   display: flex;
 }
+
+@media screen and (max-width: 375px){
+  .row{
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .nav_bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+  margin-top: 0;
+}
+
+.box1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.app_details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2px;
+  gap: 10px;
+}
+ }
+
+ @media screen and (min-width: 768px){
+  .row{
+    grid-template-columns: auto auto auto;
+   }
+ }
