@@ -3,12 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fecthAlbum } from "../redux/Homepage/HomesSlice";
 import Details from "./Details";
+// import logo from '../covid 19.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faSkull,
-    faPeopleGroup,
-    faChartSimple,
-    faMaskFace,
     faArrowRight,
     faArrowLeft,
   } from '@fortawesome/free-solid-svg-icons';
@@ -36,14 +33,19 @@ import {
     };
   
     return (
-      <section>
+      <section className="container">
         {selectedAlbumId ? (
           <div>
             <button onClick={handleResetSelection}><FontAwesomeIcon icon={faArrowLeft} /></button>
             <Details albumId={selectedAlbumId} />
           </div>
         ) : (
-          <div>
+          <div >
+            <div className="nav_bar">
+            <div className="box1">
+            {/* <img src={logo} alt={logo} className="logo"/> */}
+                <h1 className="ms-3 pt-2"> COVID-19 TRACKER</h1>
+                </div>
             <div className="form">
               <form className="search-box">
                 <input
@@ -53,6 +55,12 @@ import {
                 />
                 <button type="submit">Search</button>
               </form>
+            </div>
+            </div>
+            <div className="map">
+                <div>
+                <h1>Global Covid-19 Record (2020-Now)</h1>
+                </div>
             </div>
             <div className="row">
               {album
@@ -67,7 +75,7 @@ import {
                   >
                     <div className="icons">
                       <p>{alb.Country_Region}</p>
-                      <p>{alb.Case_Fatality_Ratio}</p>
+                      <p className='confy'>{alb.Confirmed}</p>
                     </div>
                     <i className="icon-wrapper">
                       <FontAwesomeIcon icon={faArrowRight} />
