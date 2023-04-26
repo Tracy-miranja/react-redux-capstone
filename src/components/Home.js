@@ -40,7 +40,7 @@ function Home() {
         </form>
         </div>
       <div className="row">
-        {album && album.map((alb) => (
+        {album.filter(album =>album.Country_Region.toLowerCase().includes(search)).map((alb) => (
         <button key={alb.Combined_Key} className=" col-4-sm app">
             <div className="icons">
         <p>{alb.Country_Region}</p>
