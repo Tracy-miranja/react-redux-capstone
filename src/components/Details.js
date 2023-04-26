@@ -8,17 +8,21 @@ import {  useSelector } from "react-redux";
       <section>
         <div>Last_Update:{selectedAlbum.Last_Update}</div>
         <div  className="app_details">
-            <div>
-        <p>Confirmed cases: {selectedAlbum.Confirmed}</p>
+            <div className="data">
+        <p>Confirmed cases:</p>
+            {selectedAlbum.Confirmed}
         </div>
-        <div>
-        <p>Deaths: {selectedAlbum.Deaths}</p>
+        <div className="data">
+        <p>Deaths:</p>
+        {selectedAlbum.Deaths}
         </div>
-        <div>
-        <p>Recovered: {selectedAlbum.Recovered}</p>
+        <div className="data">
+        <p>Recovered:</p>
+        {selectedAlbum.Recovered}
         </div>
-        <div>
-        <p>Incident_Rate: {selectedAlbum.Incident_Rate}</p>
+        <div className="data">
+        <p>Incident_Rate:</p>
+        {selectedAlbum.Incident_Rate}
         </div>
         </div>
       </section>
