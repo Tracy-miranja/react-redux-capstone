@@ -68,3 +68,14 @@ button:hover{
   color: rgb(119,255,0);
   width: 100%;
 }
+
+.app_details{
+  background-color: rgb(66,2, 44);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+  color: aliceblue;
+  justify-content: space-around;
+  gap:10px;
+}

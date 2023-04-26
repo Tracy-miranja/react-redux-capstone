@@ -9,7 +9,8 @@ import {
     faPeopleGroup,
     faChartSimple,
     faMaskFace,
-    faArrowRight
+    faArrowRight,
+    faArrowLeft,
   } from '@fortawesome/free-solid-svg-icons';
 
   function Home() {
@@ -38,7 +39,7 @@ import {
       <section>
         {selectedAlbumId ? (
           <div>
-            <button onClick={handleResetSelection}>Back to list</button>
+            <button onClick={handleResetSelection}><FontAwesomeIcon icon={faArrowLeft} /></button>
             <Details albumId={selectedAlbumId} />
           </div>
         ) : (
