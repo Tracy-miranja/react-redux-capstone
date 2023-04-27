@@ -36,7 +36,7 @@ import { useState } from 'react';
                 <h1>Global Covid-19 Record (2020-Now)</h1>
                 </div>
             </div>
-        <div>{selectedAlbum.Country_Region}: {selectedAlbum.Last_Update}</div>
+        <div className='datee'>{selectedAlbum.Country_Region}: {selectedAlbum.Last_Update}</div>
         <div  className="app_details">
             <div className="data">
             <FontAwesomeIcon icon={ faMaskFace} />
