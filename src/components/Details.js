@@ -17,7 +17,6 @@ import { useState } from 'react';
       <section>
           <div className="nav_bar">
             <div className="box1">
-            {/* <img src={logo} alt={logo} className="logo"/> */}
                 <h1 className="ms-3 pt-2 "> COVID-19 TRACKER</h1>
                 </div>
             <div className="form">
@@ -65,3 +64,6 @@ import { useState } from 'react';
   
 
 export default Details;
+
+
+

@@ -40,3 +40,6 @@ export const HomesSlice = createSlice({
 })
 
 export default HomesSlice.reducer;
+
+
+

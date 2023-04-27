@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fecthAlbum } from "../redux/Homepage/HomesSlice";
 import Details from "./Details";
-// import logo from '../covid 19.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faArrowRight,
@@ -43,7 +42,6 @@ import {
           <div >
             <div className="nav_bar">
             <div className="box1">
-            {/* <img src={logo} alt={logo} className="logo"/> */}
                 <h1 className="ms-3 pt-2 "> COVID-19 TRACKER</h1>
                 </div>
             <div className="form">
@@ -91,3 +89,6 @@ import {
   
 
 export default Home;
+
+
+
