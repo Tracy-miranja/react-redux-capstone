@@ -1,13 +1,14 @@
 import { createSlice} from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios"; 
+
 
 const url= 'https://coronavirus.m.pipedream.net/';
 
 export const fecthAlbum = createAsyncThunk('album/fetchAlbum', async() =>{
     try{
-        const response = await axios.get(url);
-        return response.data;
+        const response = await fetch(url);
+        const data=response.json();
+        return data;
     } catch(error){
         return (error.message)
     }
