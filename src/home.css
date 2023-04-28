@@ -1,0 +1,10 @@
+.app {
+  background-color: rgb(66, 2, 44);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0;
+  font-weight: 800;
+  color: aliceblue;
+}
