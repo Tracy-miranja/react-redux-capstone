@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import HomesSlice, { fecthAlbum } from '../redux/Homepage/HomesSlice'
+import { HomesSlice, fecthAlbum } from '../redux/Homepage/HomesSlice';
+
 jest.setTimeout(90000); // 30 seconds
 
 describe('HomesSlice', () => {

@@ -7,10 +7,12 @@ const Home = () => {
     region: 'Nakuru',
     confirmed: 3666577,
   };
-  return <div>
-    <h1>{country.region}</h1>
-  <p>{country.confirmed}</p>
-  </div>;
+  return (
+    <div>
+      <h1>{country.region}</h1>
+      <p>{country.confirmed}</p>
+    </div>
+  );
 };
 
 describe('Home', () => {
