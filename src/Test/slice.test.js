@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { HomesSlice, fecthAlbum } from '../redux/Homepage/HomesSlice';
+import HomeReducer, { fecthAlbum } from '../redux/Homepage/HomesSlice';
 
-jest.setTimeout(90000); // 30 seconds
+jest.setTimeout(90000);
 
 describe('HomesSlice', () => {
   let store;
@@ -9,7 +9,7 @@ describe('HomesSlice', () => {
   beforeEach(() => {
     store = configureStore({
       reducer: {
-        album: HomesSlice,
+        album: HomeReducer,
       },
     });
   });
